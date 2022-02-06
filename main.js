@@ -120,16 +120,8 @@ class Field {
   }
 }
 
-let myField = new Field(Field.generateRandomField());
-
-// const myField = new Field([
-//   ["*", "░", "O"],
-//   ["░", "O", "░"],
-//   ["░", "^", "░"],
-// ]);
-
 // code to run game.
-
+let myField = new Field(Field.generateRandomField());
 const buildOwn = prompt("Would you like to build your own field? (y/n): ");
 if (buildOwn === "y" || buildOwn === "Y") {
   const height = prompt("Height: ");
